@@ -16,12 +16,12 @@ app.use(express.json());
 
 app.get("/", function(req, res) {
   console.log("SERVER GET ROUTE HIT");
-  res.json({status: true, message: "CLIENT MSG RECEIVED"})
+  res.json({status: true, message: "CLIENT GET RECEIVED"})
 })
 
 app.post("/", function(req, res) {
   console.log("RECEIVED CLIENT REQ.BODY: ", req.body);
-
+  res.json({status: "ok", msg: "Got your post request"})
 })
 
 // Start the API server

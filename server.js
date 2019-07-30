@@ -20,9 +20,8 @@ app.get("/", function(req, res) {
 })
 
 app.post("/", function(req, res) {
-  console.log("SERVER POST ROUTE HIT");
   console.log("RECEIVED CLIENT REQ.BODY: ", req.body);
-  
+
 })
 
 // Start the API server
